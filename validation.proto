@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package options;
+
+option go_package = "options/validation";
+
+import "google/protobuf/descriptor.proto";
+
+extend google.protobuf.FieldOptions {
+    string validation = 10000;
+}
