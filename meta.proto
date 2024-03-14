@@ -4,7 +4,7 @@ package options;
 
 option go_package = "autogen/options/rpc";
 
-message Mata {
+message Meta {
     string remote_ip = 1 [json_name="remote_ip"];
     int64 user_id = 2 [json_name="user_id"];
     string email = 3;
