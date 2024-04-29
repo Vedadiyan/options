@@ -94,5 +94,5 @@ extend google.protobuf.FileOptions {
     repeated string useRedis = 9002;
     string useInfluxDb = 9003;
     repeated string useEnv = 9004;
-    repeated string use = 9005;
+    repeated string useGenqlFunction = 9005;
 }
