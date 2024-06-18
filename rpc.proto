@@ -39,8 +39,10 @@ message PostgreSQL {
     oneof sql {
         Mapper command = 3;
         Mapper query = 4;
+        Mapper command_tmplate = 5;
+        Mapper query_template = 6;
     }
-    Mapper response_mapper = 5;
+    Mapper response_mapper = 7;
 }
 
 message APIGateway {
