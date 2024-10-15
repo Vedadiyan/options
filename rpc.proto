@@ -36,6 +36,11 @@ message GENQL {
 message DGraph {
     string dsn = 1;
     string type = 2;
+    oneof input {
+        Mapper command = 3;
+        Mapper query = 4;
+    }
+
 }
 
 message PostgreSQL {
